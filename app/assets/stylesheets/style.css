@@ -1,13 +1,10 @@
 body{
-	background: #fff;
+	background: #f2f2f2;
 }
 .banner{
 	background:url(../images/banner.jpg) no-repeat 0px 0px;
 	background-size:cover;
 	min-height:625px;
-}
-.header{
-	padding:2em 0;
 }
 .logo{
 	float:left
@@ -16,25 +13,33 @@ body{
 	display:block;
 }
 .navbar{
-	text-align: center;
+/*	text-align: center;*/
 }
 .navbar span{
 	display:none;
+	width: 100%;
+}
+nav{
+	width: 100%;
 }
 .navbar ul{
+	width: 100%;
 	padding:3.5em 0 0 0em;
 	margin:0;
+	display: inline-block;
+	text-align: center;
 }
 .navbar ul li{
-	display:inline-block;
+	display:inline;
 	margin:0 15px;
 }
 .navbar ul li a{
+	width: 120%
+	display: inline-block;
 	font-size:16px;
 	text-decoration:none;
-	color:#fff;
+	color: #fff;
 	font-weight:500;
-
 }
 .navbar ul li a:hover{
 	color: #34acb7;
@@ -60,9 +65,51 @@ body{
 	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	}
+/*end*/
+
+/*styling for content start here*/
+.content{
+	padding: 80px;
+	width: 100%;
+	height: auto;
+	background-color: #f7f7f7;
+	text-align: center;
+}
+.item-1{
+	width: 400px;
+	height: 400px;
+	display: inline-block;
+	margin: 50px;
+	background-color: #999999;
+}
+.item-2{
+	width: 400px;
+	height: 400px;
+	display: inline-block;
+	margin: 50px;
+	background-color: #999999;
+}
+.item-3{
+	width: 400px;
+	height: 400px;
+	display: inline-block;
+	margin: 50px;
+	background-color: #999999;
+}
+.item-4{
+	width: 400px;
+	height: 400px;
+	display: inline-block;
+	margin: 50px;
+	background-color: #999999;
+}
+/*end*/
+
+/*footer styling*/
 .footer{
 	padding:2em 0;
-	background:#3c4955;
+	background:#3c4959;
+	margin: 0px;
 }
 .copyright{
 	float: left;
@@ -75,3 +122,4 @@ body{
 .s-icons{
 	float:right;
 }
+/* end */
