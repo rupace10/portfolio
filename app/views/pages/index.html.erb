@@ -1,0 +1,147 @@
+<div class="wrapper">
+
+<!-- banner div starts -->
+	<div class="banner">
+		<div class="container">
+			<div class="navbar">
+		    <span class="menu">
+          <i class= "fa fa-bars fa-2x"></i>
+        </span>
+				<nav class="navbar-text">
+					<ul class="nav1">
+						<li class=""><a href="index.html" class="scroll">Home</a></li>
+						<li><a href="#work" class="scroll">Work</a></li>
+						<li><a href="#blog" class="scroll">Blog</a></li>
+						<li><a href="#about" class="scroll">About</a></li>
+						<li><a href="#contact" class="scroll">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="intro" >
+				<div class="intro-text">Hi!!! I'm <span>Rupesh Maharjan</span></div>
+				<%= image_tag "intro.png", class: "circular-img img-circle img-responsive" %>
+			</div>
+		</div>
+	</div>
+<!-- banner div ends -->
+
+<!-- work div starts -->
+	<div class="content" id="work">
+		<div class="portfolio-text">Work</div>
+		<div class="container con grid">
+		<div class="col-lg-6">
+			<figure class="effect-milo l-figure">
+				<%= image_tag "movrev.png" %>
+				<figcaption>
+					<h2>Moview Review <span></span></h2>
+					<p>Milo went to the woods. He took a fun ride and never came back.</p>
+				</figcaption>
+			</figure>
+
+			<figure class="effect-milo s-figure">
+			<%= image_tag "blog.png" %>
+				<figcaption>
+					<h2>Blog<span></span></h2>
+					<p>Milo went to the woods. He took a fun ride and never came back.</p>
+				</figcaption>
+			</figure>
+		</div>
+
+		<div class="col-lg-6">
+			<figure class="effect-milo s-figure">
+			<%= image_tag "todo.png" %>
+				<figcaption>
+					<h2>Todo App <span></span></h2>
+					<p>Milo went to the woods. He took a fun ride and never came back.</p>
+				</figcaption>
+			</figure>
+
+			<figure class="effect-milo l-figure">
+			<%= image_tag "11.jpg" %>
+				<figcaption>
+					<h2>Faithful <span>Milo</span></h2>
+					<p>Milo went to the woods. He took a fun ride and never came back.</p>
+				</figcaption>
+			</figure>
+		</div>
+			<p class="more">
+				<a href="#" class= "btn btn-danger btn-lg ">More &nbsp;<i class="fa fa-arrow-right"></i>
+				</a>
+			</p>
+		</div>
+	</div>
+<!-- work div ends -->
+
+<!-- about div starts -->
+	<div class="about" id="about">
+
+	</div>
+<!-- about div ends -->
+
+<!-- contact div starts -->
+	<div class="contact" id="contact">
+	<div class="container">
+		<div class="col-lg-8 c-form">
+		<h3> Contact </h3>
+		<form>
+			<div class="input-group input-group-lg col-lg-12 margin-bottom-sm">
+					<span class="input-group-addon">
+				    <i class="fa fa-user"></i>
+				  </span>
+				  <input type="text" class="form-control" placeholder="Name" aria-describedby="sizing-addon1">
+			</div>
+
+			<div class="input-group input-group-lg col-lg-12 margin-bottom-sm">
+			  <span class="input-group-addon">
+			    <i class="fa fa-envelope"></i>
+			  </span>
+			  <input class="form-control" type="text" placeholder="Email address">
+			</div>
+
+			<div class="input-group input-group-lg col-lg-12 margin-bottom-sm comments">
+			  <span class="input-group-addon">
+			    <i class="fa fa-pencil"></i>
+			  </span>
+			  <textarea class="form-control " type="text" placeholder="Comments"></textarea>
+			</div>
+
+			<button class="btn btn-lg btn-success" >Submit</button>
+		</form>
+		</div>
+	</div>
+	</div>
+<!-- dontact div ends -->
+
+<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="copyright">
+				<p>Copyright © 2015 Express. All Rights Reserved | Design by<a href="http://github.com/rupace10" target="_blank"> Rupesh Maharjan</a></p>
+			</div>
+			<div class="s-icons">
+				<ul>
+					<li><a href="#" class="twitter"> </a></li>
+					<li><a href="#" class="in"> </a></li>
+					<li><a href="#" class="dribble"> </a></li>
+					<li><a href="#" class="be"> </a></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- footer end-->
+
+</div>
+<script>
+	$( ".menu" ).click(function() {
+		$( "ul" ).slideToggle( 300, function() {
+		});
+	});
+</script>
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$().UItoTop({ easingType: 'easeOutQuint' });
+		});
+	</script>
+<!-- ends -->

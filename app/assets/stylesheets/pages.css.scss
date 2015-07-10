@@ -1,0 +1,432 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+	background-color: #f7f7f7;
+}
+a{
+	transition: 0.5s all ease;
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	-ms-transition: 0.5s all ease;
+	outline: none;
+}
+.text-center{
+	text-align: center;
+}
+a:hover{
+	text-decoration:none;
+}
+a:after{
+	text-decoration: none;
+	outline: none;
+}
+
+.banner{
+	background: url(banner.png) no-repeat 0px 0px;
+	background-size:cover;
+	width: 100%;
+	height:650px;
+	.menu{
+		display: none;
+		width: 100%;
+	}
+	.navbar-text{
+		width: 100%;
+		ul{
+			width: 100%;
+			padding:3.5em 0 0 0em;
+			margin:0;
+			display: inline-block;
+			text-align: center;
+			li{
+				display: inline;
+				margin: 0 15px;
+				text-decoration: none;
+				a{
+					width: 120%;
+					font-size: 1.5em;
+					text-decoration:none;
+					color: #80cfa0;
+					font-weight:600;
+					&:hover{
+						color: #3f6457;
+					}
+				}
+			}
+		}
+	}
+	.intro{
+		float: right;
+		display: inline;
+		height: auto;
+		padding-top: 100px;
+		.intro-text{
+			color: #6d8577;
+			font-size: 2em;
+			width: auto;
+			height: auto;
+			display: inline;
+			font-weight: 700;
+			span{
+				color: #88dea6;
+				font-style: italic;
+			}
+		}
+		.circular-img{
+			background: url(intro.png) no-repeat 0px 0px;
+			width: 130px;
+			height: 130px;
+			box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .5);
+			-webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, .5);
+			-moz-box-shadow: 0 2px 6px rgba(0, 0, 0, .6);
+			float: right;
+		}
+	}
+}
+
+/*styling for content start here*/
+.content{
+	padding-top: 35px;
+	padding-bottom: 30px;
+	width: 100%;
+	height: auto;
+	background-color: #f7f7f7;
+}
+
+.portfolio-text{
+	font-size: 3em;
+	color: #7ABDB9;
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-align: center;
+}
+.con{
+
+}
+
+.grid {
+	overflow: hidden;
+	margin: 0;
+	padding: 20px 0 0 0;
+	width: 100%;
+	max-width: 1920px;
+	list-style: none;
+	text-align: center;
+}
+
+/* Common style */
+.grid figure {
+	border-radius: 12px;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	overflow: hidden;
+	margin: -0.135em;
+	width: 100%;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+}
+.l-figure{
+	height: 450px;
+}
+.s-figure{
+	height: 302px;
+}
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.grid figure figcaption h2{
+	color: #7cd798;
+}
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+/*---------------*/
+/***** Milo *****/
+/*---------------*/
+
+figure.effect-milo {
+	background: #2e5d5a;
+	margin: 20px;
+}
+
+figure.effect-milo img {
+	width: -webkit-calc(100% + 60px);
+	width: calc(100% + 60px);
+	opacity: 1;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-30px,0,0) scale(1.12);
+	transform: translate3d(-30px,0,0) scale(1.12);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+figure.effect-milo:hover img {
+	opacity: 0.5;
+	-webkit-transform: translate3d(0,0,0) scale(1);
+	transform: translate3d(0,0,0) scale(1);
+}
+
+figure.effect-milo h2 {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding: 1em 1.2em;
+}
+
+
+figure.effect-milo p {
+	padding: 0 10px 0 0;
+	width: 50%;
+	border-right: 1px solid #fff;
+	text-align: right;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-40px,0,0);
+	transform: translate3d(-40px,0,0);
+}
+
+figure.effect-milo:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.more{
+	width: auto;
+	height: auto;
+	top: 2px;
+}
+/*end*/
+
+/* about div */
+.about{
+	background:url(5.jpg) no-repeat 0px 0px;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-ms-background-size:cover;
+	-o-background-size:cover;
+	min-height:500px;
+}
+/* about div ends*/
+
+
+
+/*****contact div styling*******/
+.contact{
+	background-color: #f7f7f7;
+	padding: 45px 0px;
+	height: auto;
+}
+.c-form h3{
+	font-size: 2.5em;
+	font-weight: 700;
+	color: #7ABDB9;
+	margin-bottom: 40px;
+	letter-spacing: 2px;
+}
+
+.c-form{
+	text-align: center;
+	margin-left: 200px;
+	width: auto;
+}
+.margin-bottom-sm{
+	margin-bottom: 10px;
+}
+.comments{
+	height: 200px;
+}
+.contact textarea{
+	min-height: 200px;
+}
+/* contact div ends */
+
+
+
+/*footer styling*/
+.footer{
+	padding:2em 0;
+	background: #2c3c4f;
+	margin: 0px;
+}
+.copyright{
+	float: left;
+}
+.copyright p{
+	color:#fff;
+	font-size:14px;
+	margin:2em 0 0;
+}
+.s-icons{
+	float:right;
+}
+#toTop {
+	display: none;
+	text-decoration: none;
+	position: fixed;
+	bottom: 20px;
+	right: 2%;
+	overflow: hidden;
+	z-index: 999;
+	width: 32px;
+	height: 32px;
+	border: none;
+	text-indent: 100%;
+	background: url(arrow.png) no-repeat 0px 0px;
+}
+#toTopHover {
+	width: 32px;
+	height: 32px;
+	display: block;
+	overflow: hidden;
+	float: right;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+}
+/* footer end */
+
+
+/*responsive styling*/
+@media (max-width:520px){
+	span{
+		display: block;
+		cursor: pointer;
+		width: 100%;
+		padding-top: 20px;
+		position: relative;
+		text-align:right;
+		margin: 5px 0 0 0;
+	}
+	.navbar-text{
+		margin: 0;
+		ul{
+			position: absolute;
+			padding: 0;
+			margin: 0;
+			width: 100%;
+			z-index: 999;
+			display:none;
+			background: #b8d3d9;
+			transparency: true;
+			margin-top:1.5em;
+			opacity: 0.9;
+			li{
+				padding: 0;
+				margin: 0;
+				a{
+					display: inline-block;
+					margin: 0;
+					width: 100%;
+					font-weight: 700;
+					padding: 20px 0;
+					text-align: center;
+					border-bottom: solid 3px #e5e5e5;
+				}
+			}
+		}
+	}
+	.c-form{
+		text-align: center;
+		margin-left: 200px;
+		}
+}
+
+@media screen and (max-width:1199px){
+	.c-form{
+	text-align: center;
+	margin-left: 0px;
+	}
+}
+@media screen and (max-width: 69.5em) {
+	.grid figure {
+		width: 70%;
+	}
+	figure.effect-milo {
+		background: #2e5d5a;
+		margin: 0px;
+	}
+	.grid figure figcaption {
+		font-size: 90%;
+	}
+	.c-form{
+	text-align: center;
+	margin-left: 0px;
+	}
+
+}
+@media screen and (max-width: 41.5em) {
+
+	.grid figure {
+		width: 100%;
+	}
+	figure.effect-milo {
+	background: #2e5d5a;
+	margin: 0px;
+	}
+	.c-form{
+	text-align: center;
+	margin-left: 0px;
+	}
+
+}
