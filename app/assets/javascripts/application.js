@@ -14,3 +14,13 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$( ".banner.menu" ).click(function() {
+	$( ".banner.nav1" ).slideToggle( 300, function() {
+	});
+});
+
+// here stars scrolling icon
+$(document).ready(function() {
+	$().UItoTop({ easingType: 'easeOutQuint' });
+});

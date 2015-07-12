@@ -9,7 +9,7 @@
         </span>
 				<nav class="navbar-text">
 					<ul class="nav1">
-						<li class=""><a href="index.html" class="scroll">Home</a></li>
+						<li><a href="index.html" class="scroll">Home</a></li>
 						<li><a href="#work" class="scroll">Work</a></li>
 						<li><a href="#blog" class="scroll">Blog</a></li>
 						<li><a href="#about" class="scroll">About</a></li>
@@ -74,7 +74,6 @@
 
 <!-- about div starts -->
 	<div class="about" id="about">
-
 	</div>
 <!-- about div ends -->
 
@@ -134,14 +133,8 @@
 </div>
 <script>
 	$( ".menu" ).click(function() {
-		$( "ul" ).slideToggle( 300, function() {
+		$( ".nav1" ).slideToggle( 300, function() {
+		 // Animation complete.
 		});
 	});
 </script>
-<!-- here stars scrolling icon -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$().UItoTop({ easingType: 'easeOutQuint' });
-		});
-	</script>
-<!-- ends -->
