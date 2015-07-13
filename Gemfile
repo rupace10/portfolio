@@ -14,5 +14,5 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 gem 'bootstrap-sass', '~> 3.3.4.1'
 gem 'font-awesome-sass', '~> 4.3.0'
-
+gem 'carrierwave', '~>0.10.0'
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
